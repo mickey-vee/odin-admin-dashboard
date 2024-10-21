@@ -1,4 +1,6 @@
-body {
+body,
+p,
+h2 {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
@@ -11,12 +13,86 @@ body {
 
 .sidebar {
   display: grid;
-  grid-template-rows: 1fr, 5fr, 1fr;
+  grid-template-rows: auto auto 1fr;
   height: 100vh;
-  background-color: #64e4d1;
+  background-color: #48aab1;
   color: white;
 }
 
 li {
   list-style-type: none;
+}
+
+.nav-top {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  padding: 10px 30px;
+  align-items: center;
+}
+
+.nav-top-wrapper {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 10px;
+  align-items: center;
+}
+
+.nav-top-wrapper-right {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 10px;
+  align-items: center;
+  justify-content: end;
+}
+
+input {
+  border-radius: 50px;
+  background-color: lightgray;
+  border: none;
+  height: 30px;
+}
+
+.nav-name {
+  justify-self: flex-end;
+}
+
+.nav-bot {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  padding: 10px 30px;
+  align-items: center;
+}
+
+.user-wrapper {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  gap: 10px;
+}
+
+.nav-text {
+  font-weight: bold;
+  font-size: 12px;
+}
+
+.big {
+  font-size: 20px;
+}
+
+.user {
+  width: 50px;
+}
+
+.but {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+button {
+  border-radius: 40px;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  background-color: #48aab1;
 }
