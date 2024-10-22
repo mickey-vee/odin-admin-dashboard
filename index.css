@@ -1,6 +1,8 @@
 body,
 p,
-h2 {
+h2,
+h1,
+h3 {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
@@ -112,10 +114,10 @@ button {
 .content {
   grid-row: 2/3;
   display: grid;
-  grid-template-columns: auto auto;
+  grid-template-columns: 5fr 2fr;
   padding: 30px 20px;
   background-color: rgb(228, 235, 238);
-  gap: 1rem;
+  gap: 1.5rem;
 }
 
 .card-wrapper {
@@ -137,4 +139,26 @@ button {
 
 .card-icons {
   text-align: right;
+}
+
+.other {
+  display: grid;
+  grid-template-rows: auto auto;
+}
+
+.announcements-wrapper {
+  display: grid;
+  gap: 1rem;
+  background-color: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.announcements div {
+  padding: 1rem 0;
+}
+
+.announcements div:not(:last-child) {
+  border-bottom: 1px solid lightgray;
 }
