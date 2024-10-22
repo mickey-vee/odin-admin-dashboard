@@ -8,19 +8,23 @@ h2 {
 
 .container {
   display: grid;
-  grid-template-columns: 1fr 5fr;
+  grid-template-columns: 1fr 4fr;
+  grid-template-rows: auto 1fr;
 }
 
 .sidebar {
   display: grid;
   grid-template-rows: auto auto 1fr;
-  height: 100vh;
   background-color: #48aab1;
   color: white;
+  grid-row: 1/3;
+  grid-column: 1;
+  height: 100vh;
 }
 
 li {
   list-style-type: none;
+  width: 20px;
 }
 
 .nav-top {
@@ -28,6 +32,7 @@ li {
   grid-template-columns: 2fr 1fr;
   padding: 10px 30px;
   align-items: center;
+  grid-row: 1/2;
 }
 
 .nav-top-wrapper {
@@ -95,4 +100,41 @@ button {
   border: none;
   padding: 10px 20px;
   background-color: #48aab1;
+  font-weight: 700;
+}
+
+.main-content {
+  display: grid;
+  grid-template-rows: 0.2fr auto;
+  height: 100vh;
+}
+
+.content {
+  grid-row: 2/3;
+  display: grid;
+  grid-template-columns: auto auto;
+  padding: 30px 20px;
+  background-color: rgb(228, 235, 238);
+  gap: 1rem;
+}
+
+.card-wrapper {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 1.5rem;
+}
+
+.card {
+  display: grid;
+  grid-template-rows: auto auto;
+  gap: 2rem;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  border-left: 10px solid orange;
+}
+
+.card-icons {
+  text-align: right;
 }
